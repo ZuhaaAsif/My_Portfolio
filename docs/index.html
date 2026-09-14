@@ -36,6 +36,30 @@
     padding:8px 16px;
   }
   .links a:hover{background:#C22402; color:#fff;}
+  .contact-form{display:flex; flex-direction:column; gap:12px; max-width:420px; margin-bottom:32px;}
+  .contact-form input, .contact-form textarea{
+    font-family:'Poppins', sans-serif;
+    font-size:.95rem;
+    padding:11px 14px;
+    border:1.5px solid #EFE6E3;
+    border-radius:8px;
+    color:#241F1D;
+    resize:vertical;
+  }
+  .contact-form input:focus, .contact-form textarea:focus{outline:none; border-color:#C22402;}
+  .contact-form button{
+    font-family:'Poppins', sans-serif;
+    font-weight:600;
+    font-size:.95rem;
+    background:#C22402;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    padding:12px 20px;
+    cursor:pointer;
+    width:fit-content;
+  }
+  .contact-form button:hover{background:#a31e02;}
   h2{
     font-family:'Baloo 2', sans-serif;
     font-weight:700;
@@ -68,11 +92,18 @@
   <p class="bio">BS Computer Science student at IBA Karachi, working across full-stack development and applied machine learning. Currently completing FlyRank's Applied Search Intelligence ML internship.</p>
 
   <div class="links">
-    <a href="https://www.linkedin.com/in/zuhaa-asif-7b35563a9/" target="_blank">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-HANDLE" target="_blank">LinkedIn</a>
     <a href="https://github.com/ZuhaaAsif" target="_blank">GitHub</a>
     <a href="cv.pdf" target="_blank">CV</a>
-    <a href="mailto:zuhaaasif2004@gmail.com">Email</a>
   </div>
+
+  <h2>Get in touch</h2>
+  <form action="https://formspree.io/f/xbgjvwda" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your name" required>
+    <input type="email" name="email" placeholder="Your email" required>
+    <textarea name="message" placeholder="Message" rows="4" required></textarea>
+    <button type="submit">Send</button>
+  </form>
 
   <h2>Capstone</h2>
   <a class="card" href="https://zuhaaasif.github.io/Applied-Search-Intelligence-Google-Search-Ranking-Discoverability/" target="_blank">
