@@ -5,43 +5,87 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Zuhaa Asif</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Poppins:wght@400;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Poppins:wght@400;500;600&display=swap');
   *{box-sizing:border-box;}
   body{
     margin:0;
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
     background:#FFFFFF;
-    text-align:center;
-    padding:24px;
+    color:#241F1D;
     font-family:'Poppins', sans-serif;
+    line-height:1.6;
   }
+  .wrap{max-width:640px; margin:0 auto; padding:64px 24px 80px 24px;}
   h1{
     font-family:'Baloo 2', sans-serif;
     font-weight:800;
     color:#C22402;
-    font-size:clamp(2.2rem, 8vw, 3.4rem);
-    margin:0 0 12px 0;
+    font-size:clamp(2rem, 7vw, 2.8rem);
+    margin:0 0 8px 0;
   }
-  p{
-    color:#241F1D;
-    font-size:clamp(1rem, 3vw, 1.25rem);
-    max-width:32ch;
-    margin:0;
+  .claim{font-size:1.15rem; margin:0 0 28px 0; max-width:36ch;}
+  .bio{font-size:1rem; color:#4A443F; margin-bottom:32px; max-width:56ch;}
+  .links{display:flex; flex-wrap:wrap; gap:12px; margin-bottom:48px;}
+  .links a{
+    font-family:'Poppins', sans-serif;
+    font-weight:500;
+    font-size:.92rem;
+    color:#C22402;
+    text-decoration:none;
+    border:1.5px solid #C22402;
+    border-radius:8px;
+    padding:8px 16px;
   }
-  .dot{
-    width:10px; height:10px; border-radius:50%;
-    background:#FF89A9;
-    margin-top:28px;
+  .links a:hover{background:#C22402; color:#fff;}
+  h2{
+    font-family:'Baloo 2', sans-serif;
+    font-weight:700;
+    font-size:1.2rem;
+    margin:0 0 14px 0;
+    padding-top:24px;
+    border-top:1px solid #EFE6E3;
   }
+  .card{
+    display:block;
+    border:1px solid #EFE6E3;
+    border-radius:10px;
+    padding:18px 20px;
+    text-decoration:none;
+    color:inherit;
+    margin-bottom:14px;
+  }
+  .card:hover{border-color:#C22402;}
+  .card .tag{font-size:.78rem; color:#FF89A9; font-weight:600; text-transform:uppercase; letter-spacing:.03em;}
+  .card h3{font-family:'Baloo 2', sans-serif; margin:4px 0 6px 0; font-size:1.05rem; color:#241F1D;}
+  .card p{margin:0; font-size:.92rem; color:#4A443F;}
+  footer{margin-top:48px; font-size:.82rem; color:#8A827D;}
 </style>
 </head>
 <body>
+<div class="wrap">
+
   <h1>Zuhaa Asif</h1>
-  <p>Working code can still lie. I catch it before it ships.</p>
-  <div class="dot"></div>
+  <p class="claim">Working code can still lie. I catch it before it ships.</p>
+  <p class="bio">BS Computer Science student at IBA Karachi, working across full-stack development and applied machine learning. Currently completing FlyRank's Applied Search Intelligence ML internship.</p>
+
+  <div class="links">
+    <a href="https://www.linkedin.com/in/zuhaa-asif-7b35563a9/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/ZuhaaAsif" target="_blank">GitHub</a>
+    <a href="cv.pdf" target="_blank">CV</a>
+    <a href="mailto:zuhaaasif200@gmail.com">Email</a>
+  </div>
+
+  <h2>Capstone</h2>
+  <a class="card" href="https://zuhaaasif.github.io/Applied-Search-Intelligence-Google-Search-Ranking-Discoverability/" target="_blank">
+    <div class="tag">FlyRank ML Internship</div>
+    <h3>CTR Opportunity Scoring on 9.8M Search Rows</h3>
+    <p>Found and corrected a real data-integrity bug, then validated a transparent baseline against a Random Forest under client-grouped cross-validation. Full deployed research paper, methodology, and reproducible notebooks.</p>
+  </a>
+
+  <h2>Writing</h2>
+  <p style="color:#8A827D; font-size:.92rem;">More to come as the capstone wraps up.</p>
+
+  <footer>zuhaaasif.github.io</footer>
+
+</div>
 </body>
 </html>
